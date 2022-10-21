@@ -1,0 +1,47 @@
+<!-- <div class="container">
+    <div class="input-group">
+        <div class="form-outline">
+          <input type="search" id="form1" class="form-control" />
+          <label class="form-label" for="form1">Search</label>
+        </div>
+        <button type="button" class="btn btn-primary">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    
+</div> -->
+<form>
+        <div class="form-group mb-2">
+            <div class="container">
+
+                <div class="row height  justify-content-center align-items-center">
+
+                    <div class="col-md-6">
+
+                        <div class="form">
+                        <i class="fa fa-search"></i>
+                        <input type="text" 
+                                class="form-control form-input" 
+                                placeholder="Search anything..."
+                                id="codigo"
+                                placeholder="Codigo"
+                                name="codigo"
+                                [(ngModel)]='codigo'
+                                (ngModelChange)="codigo = $event.toUpperCase()">
+                        <!-- <span class="left-pan"><i class="fa fa-microphone"></i></span> -->
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" 
+                                class="btn btn-dark btnlargo" 
+                                data-mdb-ripple-color="dark"
+                                routerLink="/devoto/{{codigo}}"
+                                >
+                        <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+</form>
