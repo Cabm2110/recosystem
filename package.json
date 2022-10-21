@@ -2,7 +2,7 @@
   "name": "recosystem",
   "version": "1.0.0",
   "scripts": {
-    "ng": "ng build --configuration production --aot",
+    "ng": "ng",
     "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
