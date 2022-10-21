@@ -7,8 +7,8 @@ const app = express();
 // Serve only the static files form the dist directory
 app.use(express.static('.recosystem'));
 
-app.get('/busqueda', (req, res) =>
-    res.sendFile('index.html'),
+app.get('/', (req, res) =>
+    res.sendFile('index.html', {root: __dirname}),
 );
 
 // Start the app by listening on the default Heroku port
