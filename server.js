@@ -7,7 +7,7 @@ const app = express();
 // Serve only the static files form the dist directory
 app.use(express.static('.recosystem'));
 
-app.get('busqueda', (req, res) =>
+app.get('/busqueda', (req, res) =>
     res.sendFile('index.html'),
 );
 
