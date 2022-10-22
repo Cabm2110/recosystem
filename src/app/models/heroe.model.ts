@@ -9,6 +9,8 @@ export class HeroeModel {
     TELEFONO!: string ;
     ALTURA!: string;
     CORREO!: string ;
+    DIRECCION!: string;
+    OBSERVACIONES!: string;
 
     constructor() {
         
